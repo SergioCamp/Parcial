@@ -1,3 +1,6 @@
+
+## Parte 1
+
 #1.
 
 Angulo=function(m1="Pendiente_L1",m2="Pendiente_L2"){
@@ -19,10 +22,28 @@ Grafico=function(df){
 }
 Grafico(pol)
 
-#3.
+## Parte 2
 
-df=read.csv("D:/Parcial Progra/kc_house_data.csv")
+#1
+fr=read.csv("D:/Parcial Progra/dataset-fruits.csv")
+fr$ï.._id=NULL
+fr
 
-df$price
-which.max(df$price)
-head(df)
+
+#4.
+x=sample(1:100,10)
+orden=function(x){
+  n<-length(x)
+  for(j in 1:(n-1)){
+    for(i in 1:(n-j)){
+      if(x[i]>x[i+1]){
+        temp=x[i]
+        x[i]=x[i+1]
+        x[i+1]=temp
+      }
+    }
+  }
+  return(x)
+}
+orden(x)
+
