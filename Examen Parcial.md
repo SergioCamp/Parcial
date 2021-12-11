@@ -38,6 +38,17 @@ Grafico(pol)
 
 ## Parte 2
 
+#Ejercicio 01
+
+```{r}
+casas=read.csv("D:/Parcial Progra/kc_house_data.csv")
+
+casas[casas$prices==max(casas$price)]
+casas[casas$prices==min(casas$price)]
+
+plot(casas$price)
+```
+
 #Ejercicio 04
 
 ```{r}

@@ -25,10 +25,18 @@ Grafico(pol)
 ## Parte 2
 
 #1
+
+casas=read.csv("D:/Parcial Progra/kc_house_data.csv")
+
+casas[casas$prices==max(casas$price)]
+casas[casas$prices==min(casas$price)]
+
+plot(casas$price)
+
+#2
 fr=read.csv("D:/Parcial Progra/dataset-fruits.csv")
 fr$ï.._id=NULL
 fr
-
 
 #4.
 x=sample(1:100,10)
